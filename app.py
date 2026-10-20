@@ -35,7 +35,7 @@ if uploaded_file:
     # Then the model.
     # We keep the two columns, fit the line,
     # and draw the dots with the line through them.
-    %xdel = data[[x_col]]
+    x = data[[x_col]]
     y = data[y_col]
     model = LinearRegression()
     model.fit(x, y)
